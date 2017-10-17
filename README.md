@@ -9,7 +9,8 @@
     - http://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype 들어가서 JPype1‑0.6.2‑cp36‑cp36m‑win_amd64.whl 다운로드
     - pip3 install '경로\JPype1‑0.6.2‑cp36‑cp36m‑win_amd64.whl'
 - numpy
-    `pip3 install numpy`
+    - `pip3 install numpy`
 ---
 # 실행
-- python NaiveBayesToyExampleㅇ
+- python NaiveBayesToyExample
+- 입력데이터 입력 -> 결과확인
