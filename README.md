@@ -14,3 +14,7 @@
 # 실행
 - python NaiveBayesToyExample
 - 입력데이터 입력 -> 결과확인
+---
+# 설명
+- statements 설정 (0:negative, 1:positive)
+- 
