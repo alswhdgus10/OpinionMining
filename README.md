@@ -10,11 +10,10 @@
     - pip3 install '경로\JPype1‑0.6.2‑cp36‑cp36m‑win_amd64.whl'
 - numpy
     - `pip3 install numpy`
----
+
 # 실행
 - python NaiveBayesToyExample
 - 입력데이터 입력 -> 결과확인
----
+
 # 설명
 - statements 설정 (0:negative, 1:positive)
-- 
