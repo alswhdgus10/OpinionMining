@@ -1,11 +1,11 @@
 import nltk
 import re
+import itertools
 
 def ExtractRelFromIEER(NameOfDoc, SubjClass, ObjClass, Pattern, NameOfPattern):
     result = []
     for doc in nltk.corpus.ieer.parsed_docs(NameOfDoc):
         for rel in nltk.extract_rels(SubjClass, ObjClass, doc, corpus='ieer', pattern=Pattern):
-            # result.append(nltk.rtuple(rel, lcon=False, rcon=False))
             result.append(nltk.clause(rel, relsym=NameOfPattern))
 
     return result
@@ -24,7 +24,7 @@ for name in NameOfDocList:
         extracted = ExtractRelFromIEER(name, sub, 'ORGANIZATION', pattern_in, 'IN')
         final_result.append(extracted)
 
-final_result=sum(final_result, [])
+final_result=list(itertools.chain.from_iterable(final_result))
 
 print(final_result)
 print(len(final_result))
